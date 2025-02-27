@@ -13,7 +13,7 @@ export const NotesView: React.FC<INotesViewProps> = (props) => {
     <div>
         {<form onSubmit={() => props.handlerSubmit}>
             <input type="text" name='content' value={props.info.content} onChange={() => props.handlerChange}/>
-            <button>Сохранить</button>
+            <button type='submit'>Сохранить</button>
         </form>}
     </div>
   )

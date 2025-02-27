@@ -9,7 +9,7 @@ export interface INotes {
 export interface INotesListProps {
     NotesList: INotes[]
 }
-export default class NotesList  extends Component <INotesListProps, INotesListProps> {
+export default class NotesList  extends Component <INotesListProps,{NotesList: INotes[]}> {
   constructor(props: INotesListProps) {
     super(props);
     this.state = { NotesList:[] }

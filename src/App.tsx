@@ -7,10 +7,10 @@ function App() {
   
 
   return (
-    <>
-      <NotesList/>
-      <Notes/>
-    </>
+    <div>
+      <NotesList NotesList={[]}/>
+      <Notes />
+    </div>
   )
 }
 
